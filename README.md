@@ -10,3 +10,4 @@
 * https://www.pokerapi.dev/
 
 ## Team Members
+Chris Bailey
