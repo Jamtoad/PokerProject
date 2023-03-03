@@ -10,4 +10,9 @@
 * https://www.pokerapi.dev/
 
 ## Team Members
-Chris Bailey
+* Chris Bailey
+* Yinan Li
+* Jakob Stephens
+
+## User Story
+
