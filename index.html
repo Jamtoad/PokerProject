@@ -9,12 +9,12 @@
     <title>Poker Project</title>
 </head>
 <body>
-    <nav id="header">
+    <nav id="header red lighten-2">
         <div class="nav">
             <a class="left">Poker Project</a>
             <ul class="right">
-                <li href="#rules" class="tab">How to Play</li>
-                <li href="#hand-list" class="tab">Hand List</li>
+                <li href="#rules" class="tab btn-large">How to Play</li>
+                <li href="#hand-list" class="tab btn-large">Hand List</li>
             </ul>
         </div>
     </nav>
@@ -38,7 +38,11 @@
             <a id="searchBtn" class="btn-large col s4 offset-s4">Check Hand</a>
         </div>
     </div>
-    <div id="result"></div>
+    <div id="result">
+        <h5 class="hand-name center red lighten-2">Hand Result: [Result here] <!-- Append copy of hand here? --> </h5>
+        <!-- Or append copy of hand here?-->
+        <p class="hand-description green darken-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ad cum accusamus aspernatur ducimus adipisci expedita, ab eligendi magnam minus est, architecto nesciunt illo obcaecati!</p>
+    </div>
     <div id="rules">
         <h3>How to play</h3>
             <h4>Rules</h4>
@@ -67,11 +71,11 @@
                 </ul>
     </div>
     <div id="hand-list"></div>
-    <footer id="footer">
-        <h2>Made by us</h2>
+    <footer id="footer" class="red lighten-2 row">
         <div>
             <ul>
-                <li href="#header">Back to Top</li>
+                <li class="text-white left">Made by us</li>
+                <li href="#header" class="right btn-small">Back to Top</li>
             </ul>
         </div>
     </footer>
