@@ -16,4 +16,4 @@
 * Johnathan Mayo
 
 ## User Story
-
+This website will be an educational poker website!
