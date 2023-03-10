@@ -21,7 +21,7 @@ var displayWiki = function (data) {
 console.log(data.pages[0].excerpt)
 
 
-    var wikiPage = document.getElementById("results");
+    var wikiPage = document.getElementsByClassName("hand-description");
     wikiPage.innerHTML=data.pages[0].excerpt
 
     
