@@ -22,10 +22,10 @@
 <body>
     <nav id="header red lighten-2">
         <div class="nav">
-            <a class="left">Poker Project</a>
-            <ul class="right">
-                <li href="#rules" class="tab btn-large">How to Play</li>
-                <li href="#hand-list" class="tab btn-large">Hand List</li>
+            <a class="left" style="padding-left:20px;">Poker Project</a>
+            <ul class="right" style="margin-right:20px; margin-top:4px;">
+                <li href="#rules" class="tab btn-large green darken-4" style="margin-right:20px;">How to Play</li>
+                <li href="#hand-list" class="tab btn-large green darken-4">Hand List</li>
             </ul>
         </div>
     </nav>
@@ -48,14 +48,14 @@
         </div>
     </div>
     <div id="result">
-        <h5 class="hand-name center red lighten-2" style="margin-top:0px; margin-bottom:0px;">Hand Result: [Result here] <!-- Append copy of hand here? --> </h5>
+        <h5 class="hand-name center red lighten-2" style="margin-top:0px; margin-bottom:0px; padding-top:10px; padding-bottom:10px;">Hand Result: [Result here] <!-- Append copy of hand here? --> </h5>
         <!-- Or append copy of hand here?-->
-        <p class="hand-description green darken-3" style="margin-top:0px; margin-bottom:0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ad cum accusamus aspernatur ducimus adipisci expedita, ab eligendi magnam minus est, architecto nesciunt illo obcaecati!</p>
+        <p class="hand-description center green darken-3" style="margin-top:0px; margin-bottom:0px; padding-top:10px; padding-bottom:10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ad cum accusamus aspernatur ducimus adipisci expedita, ab eligendi magnam minus est, architecto nesciunt illo obcaecati!</p>
     </div>
     <div id="rules">
-        <h3 style="margin-top:0px; padding-top:18px;">How to play</h3>
-            <h4>Rules</h4>
-            <p>Each player in a Texas Hold’em game gets two hole cards, and five community cards are dealt face-up on the board. The object of Texas Hold’em is to make the best five-card poker hand using any combination of hole cards and community cards.
+        <h3 class="center yellow-text" style="margin-top:0px; padding-top:18px;">How to play</h3>
+            <h4 class="center red-text">Rules</h4>
+            <p class="white-text flow-text">Each player in a Texas Hold’em game gets two hole cards, and five community cards are dealt face-up on the board. The object of Texas Hold’em is to make the best five-card poker hand using any combination of hole cards and community cards.
 
                 The dealer begins each game by distributing these cards one at a time to each player, starting with the player in the small blind position. Hole cards are kept face down throughout the game, and can only be seen by the player holding them.
                 
@@ -64,9 +64,11 @@
                 Once the preflop betting round is complete, the dealer puts three cards face up on the board, and these community cards are known as the flop. After a round of betting from all active players, a fourth card (the turn) is dealt. Another round of betting occurs before the fifth and final card (the river) is dealt. The river is followed by one final round of betting.
                 
                 After that final round of betting, all remaining players turn their hole cards face up. This part of the hand is called the showdown, and the best hand wins at this according to poker hand rankings.</p>
-                <h4>Hand Ranking</h4>
+                <h4 id="hand-list" class="center yellow-text">Hand Ranking</h4>
+                <div class="center-align">
                 <img src="Assets/image/Hand Ranking.png" alt="Hand Ranking">
-                <ul style="margin-bottom:0px; padding-bottom:10px;">
+                </div>
+                <ul class="center white-text flow-text" style="margin-bottom:0px; padding-bottom:30px;">
                     <li>The highest-ranking hand is a royal flush (the royal straight flush). This hand includes a 10, Jack, Queen, King, and Ace of the same suit, one kind (all clubs, diamonds, hearts or spades). It can only be tied but not beaten by the royal flush of another suit.</li>
                     <li>A straight flush is made up of 5 consecutive cards of the same suit.</li>
                     <li>4 of a kind means you have 4 cards of the same rank (but different suits, of course) and a fifth card of any rank (such as 4 aces and a 9). If you have 4 aces, then no one can have any hand with an ace, so no royal flush is available.</li>
@@ -79,12 +81,11 @@
                     <li>High card is the lowest-ranking (called a "nothing") hand, when no two cards have the same rank, the five cards are not consecutive, and they are not all from the same suit.</li>
                 </ul>
     </div>
-    <div id="hand-list"></div>
     <footer id="footer" class="red lighten-2 row" style="margin-bottom:0px;">
         <div>
-            <ul style="margin-top:0px; margin-bottom:0px;">
-                <li class="text-white left">Made by us</li>
-                <li href="#header" class="right btn-small">Back to Top</li>
+            <ul style="margin-top:0px; margin-bottom:0px; padding-top:10px;">
+                <li class="white-text left" style="margin-left:20px;">Dealt by The Suits (Group 4 (2023))</li>
+                <li href="#header" class="right btn-small green darken-4" style="margin-bottom:10px; margin-right:20px;">Back to Top</li>
             </ul>
         </div>
     </footer>
