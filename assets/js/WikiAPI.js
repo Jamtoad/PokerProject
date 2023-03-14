@@ -1,5 +1,7 @@
 function getWikiAPI(currentHand, wikiInfo) {
-    var requestWiki = "https://en.wikipedia.org/w/rest.php/v1/search/page?q=" + currentHand + "&limit=1";
+    $(".hand-name").text(currentHand)
+
+    var requestWiki = "https://en.wikipedia.org/w/rest.php/v1/search/page?q=" + wikiInfo + "&limit=1";
     
     fetch(requestWiki)
         .then(function (response) {
@@ -12,6 +14,8 @@ function getWikiAPI(currentHand, wikiInfo) {
 };
 
 function displayWiki(data) {
-    var wikiPage = document.getElementById("hd");
-    wikiPage.textContent = data.pages[0].excerpt;  
+    // var wikiPage = document.getElementById("hd");
+    // wikiPage.textContent = data.pages[0].excerpt;
+
+    $(".hand-description").html(data.pages[0].excerpt)
 }
