@@ -15,12 +15,12 @@ let CARDS = [
 // search descriptor
 let HAND_FORMATTERS = {
 	high_card: ["High Card", "poker_high_card"],
-	pair: ["Pair", "pair_texas_hold_em"],
+	pair: ["Pair", "pair_texas_holdem"],
 	two_pair: ["Two Pair", "poker_two_pair"],
 	three_of_a_kind: ["Three of a Kind", "poker_three_of_a_kind"],
 	straight: ["Straight", "poker_straight"],
 	flush: ["Flush", "poker_fush"],
-	full_house: ["Full House", "poker_full_house"],
+	full_house: ["Full House", "texas_holdem_full_house"],
 	four_of_a_kind: ["Four of a Kind", "poker_four_of_a_kind"],
 	straight_flush: ["Straight Flush", "poker_straight_flush"],
 	royal_flush: ["Royal Flush", "poker_royal_flush"]
