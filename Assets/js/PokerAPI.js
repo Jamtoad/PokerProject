@@ -51,6 +51,11 @@ function cardSelected() {
 }
 
 function fetchAPI() {
+	console.log("https://api.pokerapi.dev/v1/winner/texas_holdem?cc="
+		+ selectedCards[0] + "," + selectedCards[1] + "," + selectedCards[2]
+		+ "," + selectedCards[3] + "," + selectedCards[4] + "&pc[]="
+		+ selectedCards[5] + "," + selectedCards[6])
+
 	$.get("https://api.pokerapi.dev/v1/winner/texas_holdem?cc="
 		+ selectedCards[0] + "," + selectedCards[1] + "," + selectedCards[2]
 		+ "," + selectedCards[3] + "," + selectedCards[4] + "&pc[]="
