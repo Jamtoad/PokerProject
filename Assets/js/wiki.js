@@ -1,3 +1,6 @@
+
+
+
 function getApi(currentHand) {
 
     var requestWiki = "https://en.wikipedia.org/w/rest.php/v1/search/page?q=" + currentHand + "&limit=1";
@@ -15,12 +18,13 @@ function getApi(currentHand) {
 };
 
 var displayWiki = function (data) {
+console.log(data.pages[0].excerpt)
 
 
-
-    var wikiPage = document.getElementById("hd");
-    wikiPage.textContent=data.pages[0].excerpt;
+    var wikiPage = document.getElementsByClassName("hand-description");
+    wikiPage.innerHTML=data.pages[0].excerpt
 
     
 }
-  
+   getApi("highcard"); 
+
