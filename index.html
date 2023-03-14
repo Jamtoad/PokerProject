@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./Assets/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css">
     <title>Poker Project</title>
     <style>
         #table {
@@ -30,6 +30,34 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Card Selector Section -->
+    <section class="container row grey lighten-5 hide card-selection" style="position: fixed; top: 1rem; left: 1rem;">
+        <h4 class="col s12"> Select your card! </h4>
+        <section class="collection col s6">
+            <a class="collection-item suite-selection"> Clubs </a>
+            <a class="collection-item suite-selection"> Diamonds </a>
+            <a class="collection-item suite-selection"> Hearts </a>
+            <a class="collection-item suite-selection"> Spades </a>
+        </section>
+
+        <section class="collection col s6">
+            <a class="collection-item type-selection"> Ace </a>
+            <a class="collection-item type-selection"> King </a>
+            <a class="collection-item type-selection"> Queen </a>
+            <a class="collection-item type-selection"> Joker </a>
+            <a class="collection-item type-selection"> 10 </a>
+            <a class="collection-item type-selection"> 9 </a>
+            <a class="collection-item type-selection"> 8 </a>
+            <a class="collection-item type-selection"> 7 </a>
+            <a class="collection-item type-selection"> 6 </a>
+            <a class="collection-item type-selection"> 5 </a>
+            <a class="collection-item type-selection"> 4 </a>
+            <a class="collection-item type-selection"> 3 </a>
+            <a class="collection-item type-selection"> 2 </a>
+        </section>
+    </section>
+
     <div id="table">
         <h3 class="center-align" style="margin-top:0px; padding-top:18px;">Cards in Play</h3>
         <div id="river" class="row halign-wrapper" style="margin-bottom:0px;">
@@ -48,6 +76,7 @@
             <a id="searchBtn" class="btn-large col s4 offset-s4">Check Hand</a>
         </div>
     </div>
+
     <div id="result">
         <h5 class="hand-name center red lighten-2" style="margin-top:0px; margin-bottom:0px; padding-top:10px; padding-bottom:10px;">Hand Result: [Result here] <!-- Append copy of hand here? --> </h5>
         <!-- Or append copy of hand here?-->
