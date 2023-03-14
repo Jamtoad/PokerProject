@@ -44,13 +44,24 @@ function cardSelected() {
 	let [suite, type] = getCardFromSelection()
 	$(currentlySelectedCard).attr("src", "./assets/CardImages/" + type + suite + ".png")
 
+	selectedCards[$(currentlySelectedCard).attr("id")] = type + suite
+
 	currentlySelectedSuite = null
 	currentlySelectedType = null
 }
 
-// Events
-function onAPIFetch(data, status) {
+function fetchAPI() {
+	$.get("https://api.pokerapi.dev/v1/winner/texas_holdem?cc="
+		+ selectedCards[0] + "," + selectedCards[1] + "," + selectedCards[2]
+		+ "," + selectedCards[3] + "," + selectedCards[4] + "&pc[]="
+		+ selectedCards[5] + "," + selectedCards[6], onFetchAPI)
+}
 
+// Events
+function onFetchAPI(data, success) {
+	if (success == "success") {
+		getWikiAPI(data.winners[0].result)
+	}
 }
 
 function onCardSelectionActivated(button, selection) {
@@ -80,6 +91,11 @@ function onCardActivated(button) {
 	currentlySelectedCard = $(button.currentTarget)
 }
 
+function onCheckResult(button) {
+	fetchAPI()
+}
+
+$(".check-result").on("click", onCheckResult)
 $(".poker-card").on("click", onCardActivated)
 $(".suite-selection").on("click", function(button) {
 	onCardSelectionActivated(button, "suite")
