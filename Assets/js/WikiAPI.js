@@ -15,12 +15,12 @@ function getApi(currentHand) {
 };
 
 var displayWiki = function (data) {
-// console.log(data.pages[0].excerpt)
+
 
 
     var wikiPage = document.getElementById("hd");
     wikiPage.textContent=data.pages[0].excerpt;
-// $(".hand-description").text(data.pages[0].excerpt)
+
     
 }
   
