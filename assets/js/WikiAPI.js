@@ -1,5 +1,5 @@
 function getWikiAPI(currentHand, wikiInfo) {
-    $(".hand-name").text(currentHand)
+    $(".hand-name").text("Hand Result: " + currentHand)
 
     var requestWiki = "https://en.wikipedia.org/w/rest.php/v1/search/page?q=" + wikiInfo + "&limit=1";
     
@@ -17,5 +17,5 @@ function displayWiki(data) {
     // var wikiPage = document.getElementById("hd");
     // wikiPage.textContent = data.pages[0].excerpt;
 
-    $(".hand-description").html(data.pages[0].excerpt)
+    $(".hand-description").html(data.pages[0].excerpt + "...")
 }
